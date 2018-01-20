@@ -19,7 +19,7 @@ RUN pip3 install -U pip chaperone \
 COPY update.sh /
 COPY chaperone.yaml /etc/chaperone.d/chaperone.yaml
 
-RUN bin/pip3 install -r https://bitbucket.org/pypa/bandersnatch/raw/stable/requirements.txt \
+RUN pip3 install -r https://bitbucket.org/pypa/bandersnatch/raw/stable/requirements.txt \
   && mkdir -p /etc/bandersnatch
 
 COPY mirror.conf /etc/bandersnatch/mirror.conf
