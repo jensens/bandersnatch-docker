@@ -16,7 +16,7 @@ RUN pip3 install -U pip chaperone \
   && useradd --system -U -u 500 runapps \
   && mkdir /etc/chaperone.d
 
-COPY renew.sh /
+COPY update.sh /
 COPY chaperone.yaml /etc/chaperone.d/chaperone.yaml
 
 RUN bin/pip3 install -r https://bitbucket.org/pypa/bandersnatch/raw/stable/requirements.txt \
