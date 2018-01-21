@@ -24,7 +24,7 @@ RUN pip3 install -r https://bitbucket.org/pypa/bandersnatch/raw/stable/requireme
 
 COPY mirror.conf /etc/bandersnatch/
 
-RUN chown runapp /etc/bandersnatch/mirror.conf
+RUN chown runapps /etc/bandersnatch/mirror.conf
 
 USER runapps
 
