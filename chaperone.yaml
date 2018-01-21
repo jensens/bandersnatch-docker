@@ -1,5 +1,5 @@
 renew.service:
-  command: "/renew.sh"
+  command: "/update.sh"
   interval: 37 01,13 * * *
   type: cron
 console.logging:
