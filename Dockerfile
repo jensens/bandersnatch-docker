@@ -22,7 +22,9 @@ COPY chaperone.yaml /etc/chaperone.d/chaperone.yaml
 RUN pip3 install -r https://bitbucket.org/pypa/bandersnatch/raw/stable/requirements.txt \
   && mkdir -p /etc/bandersnatch
 
-COPY mirror.conf /etc/bandersnatch/mirror.conf
+COPY mirror.conf /etc/bandersnatch/
+
+RUN chown runapp /etc/bandersnatch/mirror.conf
 
 USER runapps
 
