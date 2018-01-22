@@ -1,4 +1,4 @@
-FROM python:3.6-slim
+FROM python:3.6-slim-stretch
 
 MAINTAINER "BlueDynamics Alliance" http://bluedynamics.com
 LABEL name="bandersnatch update" \
