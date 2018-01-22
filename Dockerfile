@@ -18,11 +18,11 @@ COPY chaperone.yaml /etc/chaperone.d/chaperone.yaml
 COPY bandersnatch.conf /etc/
 COPY update.sh /
 
-USER runapps
-
 VOLUME /data
 RUN mkdir /data/mirror \
     && chown runapps /data/mirror
+
+USER runapps
 
 ENTRYPOINT ["/usr/local/bin/chaperone"]
 
