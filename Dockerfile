@@ -18,9 +18,6 @@ RUN apt-get update \
 COPY chaperone.yaml /etc/chaperone.d/chaperone.yaml
 COPY bandersnatch.conf /etc/
 COPY update.sh /
-
 VOLUME /data
-RUN mkdir /data/mirror \
-    && chown runapps /data/mirror
 
 ENTRYPOINT ["/usr/local/bin/chaperone"]
