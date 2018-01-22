@@ -10,7 +10,7 @@ RUN apt-get update \
     && apt-get -y install --no-install-recommends \
         software-properties-common \
         python3-pip \
-    && apt-clean \
+    && apt clean \
     && apt autoremove -y \
     && pip3 install -U pip chaperone \
     && pip3 install -r https://bitbucket.org/pypa/bandersnatch/raw/stable/requirements.txt
