@@ -6,7 +6,7 @@ LABEL name="bandersnatch update" \
 
 RUN apt-get update \
     && apt-get -y upgrade  \
-    && apt-get -y dist-upgrade
+    && apt-get -y dist-upgrade \
     && apt-get -y install \
         software-properties-common \
         python3-pip \
