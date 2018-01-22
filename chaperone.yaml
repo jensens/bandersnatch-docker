@@ -1,6 +1,6 @@
-renew.service:
+update.service:
   command: "/update.sh"
-  interval: 37 01,13 * * *
+  interval: */2 * * * *
   type: cron
 console.logging:
   stdout: true
